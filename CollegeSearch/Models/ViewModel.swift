@@ -10,6 +10,9 @@ import CodableCSV
 
 class ViewModel: ObservableObject {
   /// An array of stored institutions.
+  let allInstitutions: [Institution]
+  
+  /// An array of institutions to show, after any sorting and filters are applied.
   @Published var institutions: [Institution]
   
   /// Creates a view model, loading a list of institutions from `colleges.csv` in the app bundle.
@@ -22,11 +25,31 @@ class ViewModel: ObservableObject {
     
     if let path = Bundle.main.url(forResource: "colleges", withExtension: "csv") {
       if let decoded = try? decoder.decode([Institution].self, from: path) {
-        institutions = decoded
+        allInstitutions = decoded
+        institutions = allInstitutions
         return
       }
       fatalError("Failed to decode the data.")
     }
     fatalError("Failed to load the college file.")
+  }
+  
+  func filter(by searchTerm: String) {
+    var institutions = [Institution]()
+    // run on another thread to prevent freezes
+    DispatchQueue.global(qos: .background).async { [unowned self] in
+      institutions = self.allInstitutions.filter {
+        $0.name.starts(with: searchTerm)
+      }
+      
+      DispatchQueue.main.async {
+        self.institutions = institutions
+      }
+    }
+  }
+  
+  /// Remove all applied filters and sorting to the list of institutions.
+  func reset() {
+    institutions = allInstitutions
   }
 }

@@ -9,14 +9,22 @@ import SwiftUI
 
 struct ContentView: View {
   @EnvironmentObject var viewModel: ViewModel
+  @State private var text = ""
   
   var body: some View {
     NavigationView {
-      List(viewModel.institutions) { institution in
-        NavigationLink(destination: InstitutionView(institution: institution)) {
-          Text(institution.name)
+      VStack {
+        SearchBarView(searchText: $text, onSearch: viewModel.filter, onClear: viewModel.reset)
+        List {
+          ForEach(viewModel.institutions) { institution in
+            NavigationLink(destination: InstitutionView(institution: institution)) {
+              Text(institution.name)
+            }
+          }
         }
+        .listStyle(PlainListStyle())
       }
+      
       .navigationBarTitle("All Schools")
     }
   }
