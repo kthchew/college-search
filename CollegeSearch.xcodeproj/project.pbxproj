@@ -1,0 +1,585 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9FEFFF8F259179D300382D62 /* CollegeSearchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FEFFF8E259179D300382D62 /* CollegeSearchApp.swift */; };
+		9FEFFF91259179D300382D62 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FEFFF90259179D300382D62 /* ContentView.swift */; };
+		9FEFFF93259179D600382D62 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FEFFF92259179D600382D62 /* Assets.xcassets */; };
+		9FEFFF96259179D600382D62 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FEFFF95259179D600382D62 /* Preview Assets.xcassets */; };
+		9FEFFFA1259179D700382D62 /* CollegeSearchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FEFFFA0259179D700382D62 /* CollegeSearchTests.swift */; };
+		9FEFFFAC259179D700382D62 /* CollegeSearchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FEFFFAB259179D700382D62 /* CollegeSearchUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9FEFFF9D259179D700382D62 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9FEFFF83259179D300382D62 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9FEFFF8A259179D300382D62;
+			remoteInfo = CollegeSearch;
+		};
+		9FEFFFA8259179D700382D62 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9FEFFF83259179D300382D62 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9FEFFF8A259179D300382D62;
+			remoteInfo = CollegeSearch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9FEFFF8B259179D300382D62 /* CollegeSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CollegeSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9FEFFF8E259179D300382D62 /* CollegeSearchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollegeSearchApp.swift; sourceTree = "<group>"; };
+		9FEFFF90259179D300382D62 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		9FEFFF92259179D600382D62 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9FEFFF95259179D600382D62 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9FEFFF97259179D600382D62 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9FEFFF9C259179D700382D62 /* CollegeSearchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CollegeSearchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9FEFFFA0259179D700382D62 /* CollegeSearchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollegeSearchTests.swift; sourceTree = "<group>"; };
+		9FEFFFA2259179D700382D62 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9FEFFFA7259179D700382D62 /* CollegeSearchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CollegeSearchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9FEFFFAB259179D700382D62 /* CollegeSearchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollegeSearchUITests.swift; sourceTree = "<group>"; };
+		9FEFFFAD259179D700382D62 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9FEFFF88259179D300382D62 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9FEFFF99259179D700382D62 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9FEFFFA4259179D700382D62 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9FEFFF82259179D300382D62 = {
+			isa = PBXGroup;
+			children = (
+				9FEFFF8D259179D300382D62 /* CollegeSearch */,
+				9FEFFF9F259179D700382D62 /* CollegeSearchTests */,
+				9FEFFFAA259179D700382D62 /* CollegeSearchUITests */,
+				9FEFFF8C259179D300382D62 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9FEFFF8C259179D300382D62 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9FEFFF8B259179D300382D62 /* CollegeSearch.app */,
+				9FEFFF9C259179D700382D62 /* CollegeSearchTests.xctest */,
+				9FEFFFA7259179D700382D62 /* CollegeSearchUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9FEFFF8D259179D300382D62 /* CollegeSearch */ = {
+			isa = PBXGroup;
+			children = (
+				9FEFFF8E259179D300382D62 /* CollegeSearchApp.swift */,
+				9FEFFF90259179D300382D62 /* ContentView.swift */,
+				9FEFFF92259179D600382D62 /* Assets.xcassets */,
+				9FEFFF97259179D600382D62 /* Info.plist */,
+				9FEFFF94259179D600382D62 /* Preview Content */,
+			);
+			path = CollegeSearch;
+			sourceTree = "<group>";
+		};
+		9FEFFF94259179D600382D62 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				9FEFFF95259179D600382D62 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		9FEFFF9F259179D700382D62 /* CollegeSearchTests */ = {
+			isa = PBXGroup;
+			children = (
+				9FEFFFA0259179D700382D62 /* CollegeSearchTests.swift */,
+				9FEFFFA2259179D700382D62 /* Info.plist */,
+			);
+			path = CollegeSearchTests;
+			sourceTree = "<group>";
+		};
+		9FEFFFAA259179D700382D62 /* CollegeSearchUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9FEFFFAB259179D700382D62 /* CollegeSearchUITests.swift */,
+				9FEFFFAD259179D700382D62 /* Info.plist */,
+			);
+			path = CollegeSearchUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9FEFFF8A259179D300382D62 /* CollegeSearch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9FEFFFB0259179D700382D62 /* Build configuration list for PBXNativeTarget "CollegeSearch" */;
+			buildPhases = (
+				9FEFFF87259179D300382D62 /* Sources */,
+				9FEFFF88259179D300382D62 /* Frameworks */,
+				9FEFFF89259179D300382D62 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CollegeSearch;
+			productName = CollegeSearch;
+			productReference = 9FEFFF8B259179D300382D62 /* CollegeSearch.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9FEFFF9B259179D700382D62 /* CollegeSearchTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9FEFFFB3259179D700382D62 /* Build configuration list for PBXNativeTarget "CollegeSearchTests" */;
+			buildPhases = (
+				9FEFFF98259179D700382D62 /* Sources */,
+				9FEFFF99259179D700382D62 /* Frameworks */,
+				9FEFFF9A259179D700382D62 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9FEFFF9E259179D700382D62 /* PBXTargetDependency */,
+			);
+			name = CollegeSearchTests;
+			productName = CollegeSearchTests;
+			productReference = 9FEFFF9C259179D700382D62 /* CollegeSearchTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9FEFFFA6259179D700382D62 /* CollegeSearchUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9FEFFFB6259179D700382D62 /* Build configuration list for PBXNativeTarget "CollegeSearchUITests" */;
+			buildPhases = (
+				9FEFFFA3259179D700382D62 /* Sources */,
+				9FEFFFA4259179D700382D62 /* Frameworks */,
+				9FEFFFA5259179D700382D62 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9FEFFFA9259179D700382D62 /* PBXTargetDependency */,
+			);
+			name = CollegeSearchUITests;
+			productName = CollegeSearchUITests;
+			productReference = 9FEFFFA7259179D700382D62 /* CollegeSearchUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9FEFFF83259179D300382D62 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					9FEFFF8A259179D300382D62 = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					9FEFFF9B259179D700382D62 = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = 9FEFFF8A259179D300382D62;
+					};
+					9FEFFFA6259179D700382D62 = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = 9FEFFF8A259179D300382D62;
+					};
+				};
+			};
+			buildConfigurationList = 9FEFFF86259179D300382D62 /* Build configuration list for PBXProject "CollegeSearch" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9FEFFF82259179D300382D62;
+			productRefGroup = 9FEFFF8C259179D300382D62 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9FEFFF8A259179D300382D62 /* CollegeSearch */,
+				9FEFFF9B259179D700382D62 /* CollegeSearchTests */,
+				9FEFFFA6259179D700382D62 /* CollegeSearchUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9FEFFF89259179D300382D62 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FEFFF96259179D600382D62 /* Preview Assets.xcassets in Resources */,
+				9FEFFF93259179D600382D62 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9FEFFF9A259179D700382D62 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9FEFFFA5259179D700382D62 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9FEFFF87259179D300382D62 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FEFFF91259179D300382D62 /* ContentView.swift in Sources */,
+				9FEFFF8F259179D300382D62 /* CollegeSearchApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9FEFFF98259179D700382D62 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FEFFFA1259179D700382D62 /* CollegeSearchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9FEFFFA3259179D700382D62 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FEFFFAC259179D700382D62 /* CollegeSearchUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9FEFFF9E259179D700382D62 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9FEFFF8A259179D300382D62 /* CollegeSearch */;
+			targetProxy = 9FEFFF9D259179D700382D62 /* PBXContainerItemProxy */;
+		};
+		9FEFFFA9259179D700382D62 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9FEFFF8A259179D300382D62 /* CollegeSearch */;
+			targetProxy = 9FEFFFA8259179D700382D62 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		9FEFFFAE259179D700382D62 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9FEFFFAF259179D700382D62 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9FEFFFB1259179D700382D62 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"CollegeSearch/Preview Content\"";
+				DEVELOPMENT_TEAM = YN43D87323;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = CollegeSearch/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = me.chew.kenneth.CollegeSearch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9FEFFFB2259179D700382D62 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"CollegeSearch/Preview Content\"";
+				DEVELOPMENT_TEAM = YN43D87323;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = CollegeSearch/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = me.chew.kenneth.CollegeSearch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9FEFFFB4259179D700382D62 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YN43D87323;
+				INFOPLIST_FILE = CollegeSearchTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = me.chew.kenneth.CollegeSearchTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CollegeSearch.app/CollegeSearch";
+			};
+			name = Debug;
+		};
+		9FEFFFB5259179D700382D62 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YN43D87323;
+				INFOPLIST_FILE = CollegeSearchTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = me.chew.kenneth.CollegeSearchTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CollegeSearch.app/CollegeSearch";
+			};
+			name = Release;
+		};
+		9FEFFFB7259179D700382D62 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YN43D87323;
+				INFOPLIST_FILE = CollegeSearchUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = me.chew.kenneth.CollegeSearchUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CollegeSearch;
+			};
+			name = Debug;
+		};
+		9FEFFFB8259179D700382D62 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YN43D87323;
+				INFOPLIST_FILE = CollegeSearchUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = me.chew.kenneth.CollegeSearchUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CollegeSearch;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9FEFFF86259179D300382D62 /* Build configuration list for PBXProject "CollegeSearch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9FEFFFAE259179D700382D62 /* Debug */,
+				9FEFFFAF259179D700382D62 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9FEFFFB0259179D700382D62 /* Build configuration list for PBXNativeTarget "CollegeSearch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9FEFFFB1259179D700382D62 /* Debug */,
+				9FEFFFB2259179D700382D62 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9FEFFFB3259179D700382D62 /* Build configuration list for PBXNativeTarget "CollegeSearchTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9FEFFFB4259179D700382D62 /* Debug */,
+				9FEFFFB5259179D700382D62 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9FEFFFB6259179D700382D62 /* Build configuration list for PBXNativeTarget "CollegeSearchUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9FEFFFB7259179D700382D62 /* Debug */,
+				9FEFFFB8259179D700382D62 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9FEFFF83259179D300382D62 /* Project object */;
+}
