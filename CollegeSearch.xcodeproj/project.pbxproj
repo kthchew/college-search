@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,7 @@
 		9FEFFFA1259179D700382D62 /* CollegeSearchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FEFFFA0259179D700382D62 /* CollegeSearchTests.swift */; };
 		9FEFFFAC259179D700382D62 /* CollegeSearchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FEFFFAB259179D700382D62 /* CollegeSearchUITests.swift */; };
 		9FEFFFBD259179EE00382D62 /* colleges.csv in Resources */ = {isa = PBXBuildFile; fileRef = 9FEFFFBC259179EE00382D62 /* colleges.csv */; };
+		9FEFFFC325917A6400382D62 /* CodableCSV in Frameworks */ = {isa = PBXBuildFile; productRef = 9FEFFFC225917A6400382D62 /* CodableCSV */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FEFFFC325917A6400382D62 /* CodableCSV in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,6 +151,9 @@
 			dependencies = (
 			);
 			name = CollegeSearch;
+			packageProductDependencies = (
+				9FEFFFC225917A6400382D62 /* CodableCSV */,
+			);
 			productName = CollegeSearch;
 			productReference = 9FEFFF8B259179D300382D62 /* CollegeSearch.app */;
 			productType = "com.apple.product-type.application";
@@ -220,6 +225,9 @@
 				Base,
 			);
 			mainGroup = 9FEFFF82259179D300382D62;
+			packageReferences = (
+				9FEFFFC125917A6400382D62 /* XCRemoteSwiftPackageReference "CodableCSV" */,
+			);
 			productRefGroup = 9FEFFF8C259179D300382D62 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -584,6 +592,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9FEFFFC125917A6400382D62 /* XCRemoteSwiftPackageReference "CodableCSV" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/dehesa/CodableCSV";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.6.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9FEFFFC225917A6400382D62 /* CodableCSV */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9FEFFFC125917A6400382D62 /* XCRemoteSwiftPackageReference "CodableCSV" */;
+			productName = CodableCSV;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 9FEFFF83259179D300382D62 /* Project object */;
 }
