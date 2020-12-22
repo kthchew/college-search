@@ -13,194 +13,86 @@ struct InstitutionView: View {
   var body: some View {
     List {
       Section(header: Text("Basic Information")) {
-        HStack {
-          Text("Headcount")
-          Spacer()
-          Text(institution.headcount?.normalFormat ?? "Unknown")
-            .foregroundColor(.secondary)
-        }
+        CellView(titleText: "Headcount", detailText: institution.headcount?.normalFormat)
       }
       
       Section(header: Text("Selectivity")) {
-        HStack {
-          Text("Percent Admitted (Total)")
-          Spacer()
-          Text(institution.percentAdmittedTotal?.percentFormat ?? "Unknown")
-            .foregroundColor(.secondary)
-        }
+        CellView(titleText: "Percent Admitted (Total)", detailText: institution.percentAdmittedTotal?.percentFormat)
         
-        HStack {
-          Text("Percent Admitted (Male)")
-          Spacer()
-          Text(institution.percentAdmittedMen?.percentFormat ?? "Unknown")
-            .foregroundColor(.secondary)
-        }
+        CellView(titleText: "Percent Admitted (Male)", detailText: institution.percentAdmittedMen?.percentFormat)
         
-        HStack {
-          Text("Percent Admitted (Female)")
-          Spacer()
-          Text(institution.percentAdmittedWomen?.percentFormat ?? "Unknown")
-            .foregroundColor(.secondary)
-        }
+        CellView(titleText: "Percent Admitted (Female)", detailText: institution.percentAdmittedWomen?.percentFormat)
         
-        HStack {
-          Text("Admissions Yield (Total)")
-          Spacer()
-          Text(institution.admissionsYieldTotal?.percentFormat ?? "Unknown")
-            .foregroundColor(.secondary)
-        }
+        CellView(titleText: "Admissions Yield (Total)", detailText: institution.admissionsYieldTotal?.percentFormat)
         
-        HStack {
-          Text("Admissions Yield (Male)")
-          Spacer()
-          Text(institution.admissionsYieldMen?.percentFormat ?? "Unknown")
-            .foregroundColor(.secondary)
-        }
+        CellView(titleText: "Admissions Yield (Male)", detailText: institution.admissionsYieldMen?.percentFormat)
         
-        HStack {
-          Text("Admissions Yield (Female)")
-          Spacer()
-          Text(institution.admissionsYieldWomen?.percentFormat ?? "Unknown")
-            .foregroundColor(.secondary)
-        }
+        CellView(titleText: "Admissions Yield (Female)", detailText: institution.admissionsYieldWomen?.percentFormat)
       }
       
       Section(header: Text("SAT Scores")) {
-        HStack {
-          Text("Percent Submitted")
-          Spacer()
-          Text(institution.percentStudentsSubmittingSATScores?.percentFormat ?? "Unknown")
-            .foregroundColor(.secondary)
-        }
+        CellView(titleText: "Percent Submitted", detailText: institution.percentStudentsSubmittingSATScores?.percentFormat)
         
-        HStack {
-          Text("English 25th Percentile")
-          Spacer()
-          Text(institution.satEnglish25Percentile?.normalFormat ?? "Unknown")
-            .foregroundColor(.secondary)
-        }
+        CellView(titleText: "English 25th Percentile", detailText: institution.satEnglish25Percentile?.normalFormat)
         
-        HStack {
-          Text("English 75th Percentile")
-          Spacer()
-          Text(institution.satEnglish75Percentile?.normalFormat ?? "Unknown")
-            .foregroundColor(.secondary)
-        }
+        CellView(titleText: "English 75th Percentile", detailText: institution.satEnglish75Percentile?.normalFormat)
         
-        HStack {
-          Text("Math 25th Percentile")
-          Spacer()
-          Text(institution.satMath25Percentile?.normalFormat ?? "Unknown")
-            .foregroundColor(.secondary)
-        }
+        CellView(titleText: "Math 25th Percentile", detailText: institution.satMath25Percentile?.normalFormat)
         
-        HStack {
-          Text("Math 75th Percentile")
-          Spacer()
-          Text(institution.satMath75Percentile?.normalFormat ?? "Unknown")
-            .foregroundColor(.secondary)
-        }
+        CellView(titleText: "Math 75th Percentile", detailText: institution.satMath75Percentile?.normalFormat)
       }
         
       Section(header: Text("ACT Scores")) {
-        HStack {
-          Text("Percent Submitted")
-          Spacer()
-          Text(institution.percentStudentsSubmittingACTScores?.percentFormat ?? "Unknown")
-            .foregroundColor(.secondary)
-        }
         
-        HStack {
-          Text("Composite 25th Percentile")
-          Spacer()
-          Text(institution.actComposite25Percentile?.normalFormat ?? "Unknown")
-            .foregroundColor(.secondary)
-        }
+        CellView(titleText: "Percent Submitted", detailText: institution.percentStudentsSubmittingACTScores?.percentFormat)
         
-        HStack {
-          Text("Composite 75th Percentile")
-          Spacer()
-          Text(institution.actComposite75Percentile?.normalFormat ?? "Unknown")
-            .foregroundColor(.secondary)
-        }
+        CellView(titleText: "Composite 25th Percentile", detailText: institution.actComposite25Percentile?.normalFormat)
         
-        HStack {
-          Text("English 25th Percentile")
-          Spacer()
-          Text(institution.actEnglish25Percentile?.normalFormat ?? "Unknown")
-            .foregroundColor(.secondary)
-        }
+        CellView(titleText: "Composite 75th Percentile", detailText: institution.actComposite75Percentile?.normalFormat)
         
-        HStack {
-          Text("English 75th Percentile")
-          Spacer()
-          Text(institution.actEnglish75Percentile?.normalFormat ?? "Unknown")
-            .foregroundColor(.secondary)
-        }
+        CellView(titleText: "English 25th Percentile", detailText: institution.actEnglish25Percentile?.normalFormat)
         
-        HStack {
-          Text("Math 25th Percentile")
-          Spacer()
-          Text(institution.actMath25Percentile?.normalFormat ?? "Unknown")
-            .foregroundColor(.secondary)
-        }
+        CellView(titleText: "English 75th Percentile", detailText: institution.actEnglish75Percentile?.normalFormat)
         
-        HStack {
-          Text("Math 75th Percentile")
-          Spacer()
-          Text(institution.actMath75Percentile?.normalFormat ?? "Unknown")
-            .foregroundColor(.secondary)
-        }
+        CellView(titleText: "Math 25th Percentile", detailText: institution.actMath25Percentile?.normalFormat)
+        
+        CellView(titleText: "Math 75th Percentile", detailText: institution.actMath75Percentile?.normalFormat)
       }
       
       Section(header: Text("Financial Aid")) {
-        HStack {
-          Text("Published Tuition/Fees")
-          Spacer()
-          Text(institution.tuitionAndFees?.currencyFormat ?? "Unknown")
-            .foregroundColor(.secondary)
-        }
+        CellView(titleText: "Published Tuition and Fees", detailText: institution.tuitionAndFees?.currencyFormat)
         
-        HStack {
-          Text("Undergrads Awarded Aid")
-          Spacer()
-          Text(institution.percentUndergradsAwardedAid?.percentFormat ?? "Unknown")
-            .foregroundColor(.secondary)
-        }
+        CellView(titleText: "Undergrads Awarded Aid", detailText: institution.percentUndergradsAwardedAid?.percentFormat)
         
-        HStack {
-          Text("Net Price")
-          Spacer()
-          Text(institution.netPriceForStudentsAwardedAid?.currencyFormat ?? "Unknown")
-            .foregroundColor(.secondary)
-        }
+        CellView(titleText: "Net Price", detailText: institution.netPriceForStudentsAwardedAid?.currencyFormat)
       }
       
       Section(header: Text("Applications")) {
-        HStack {
-          Text("Total Applicants")
-          Spacer()
-          Text(institution.totalApplicants?.normalFormat ?? "Unknown")
-            .foregroundColor(.secondary)
-        }
+        CellView(titleText: "Total Applicants", detailText: institution.totalApplicants?.normalFormat)
         
-        HStack {
-          Text("Total Admissions")
-          Spacer()
-          Text(institution.totalAdmissions?.normalFormat ?? "Unknown")
-            .foregroundColor(.secondary)
-        }
+        CellView(titleText: "Total Admissions", detailText: institution.totalAdmissions?.normalFormat)
         
-        HStack {
-          Text("Total Enrolled")
-          Spacer()
-          Text(institution.totalEnrolled?.normalFormat ?? "Unknown")
-            .foregroundColor(.secondary)
-        }
+        CellView(titleText: "Total Enrolled", detailText: institution.totalEnrolled?.normalFormat)
       }
     }
     .listStyle(GroupedListStyle())
     .navigationBarTitle(institution.name, displayMode: .inline)
+  }
+}
+
+struct CellView: View {
+  /// The text to show on the left of the cell.
+  let titleText: String
+  /// The text to show on the right of the cell, to add more detail.
+  let detailText: String?
+  
+  var body: some View {
+    HStack {
+      Text(titleText)
+      Spacer()
+      Text(detailText ?? "Unknown")
+        .foregroundColor(.secondary)
+    }
   }
 }
 
