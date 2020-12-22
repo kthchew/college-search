@@ -8,9 +8,14 @@
 import SwiftUI
 
 struct ContentView: View {
+  @StateObject var viewModel = ViewModel()
+  
   var body: some View {
-    Text("Hello, world!")
-      .padding()
+    NavigationView {
+      List(viewModel.institutions) { institution in
+        Text(institution.name)
+      }
+    }
   }
 }
 

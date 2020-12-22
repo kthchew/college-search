@@ -15,6 +15,8 @@
 		9FEFFFAC259179D700382D62 /* CollegeSearchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FEFFFAB259179D700382D62 /* CollegeSearchUITests.swift */; };
 		9FEFFFBD259179EE00382D62 /* colleges.csv in Resources */ = {isa = PBXBuildFile; fileRef = 9FEFFFBC259179EE00382D62 /* colleges.csv */; };
 		9FEFFFC325917A6400382D62 /* CodableCSV in Frameworks */ = {isa = PBXBuildFile; productRef = 9FEFFFC225917A6400382D62 /* CodableCSV */; };
+		9FEFFFC825917A7800382D62 /* Institution.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FEFFFC725917A7800382D62 /* Institution.swift */; };
+		9FEFFFCD25917A8100382D62 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FEFFFCC25917A8100382D62 /* ViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,8 @@
 		9FEFFFAB259179D700382D62 /* CollegeSearchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollegeSearchUITests.swift; sourceTree = "<group>"; };
 		9FEFFFAD259179D700382D62 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9FEFFFBC259179EE00382D62 /* colleges.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = colleges.csv; sourceTree = "<group>"; };
+		9FEFFFC725917A7800382D62 /* Institution.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Institution.swift; sourceTree = "<group>"; };
+		9FEFFFCC25917A8100382D62 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +105,8 @@
 			children = (
 				9FEFFF8E259179D300382D62 /* CollegeSearchApp.swift */,
 				9FEFFF90259179D300382D62 /* ContentView.swift */,
+				9FEFFFC725917A7800382D62 /* Institution.swift */,
+				9FEFFFCC25917A8100382D62 /* ViewModel.swift */,
 				9FEFFF92259179D600382D62 /* Assets.xcassets */,
 				9FEFFF97259179D600382D62 /* Info.plist */,
 				9FEFFFBC259179EE00382D62 /* colleges.csv */,
@@ -272,6 +278,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				9FEFFF91259179D300382D62 /* ContentView.swift in Sources */,
+				9FEFFFC825917A7800382D62 /* Institution.swift in Sources */,
+				9FEFFFCD25917A8100382D62 /* ViewModel.swift in Sources */,
 				9FEFFF8F259179D300382D62 /* CollegeSearchApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
