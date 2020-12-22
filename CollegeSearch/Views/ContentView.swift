@@ -22,6 +22,7 @@ struct ContentView: View {
             }
           }
         }
+        .id(UUID()) // prevent lag when searching
         .listStyle(PlainListStyle())
       }
       

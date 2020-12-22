@@ -35,16 +35,8 @@ class ViewModel: ObservableObject {
   }
   
   func filter(by searchTerm: String) {
-    var institutions = [Institution]()
-    // run on another thread to prevent freezes
-    DispatchQueue.global(qos: .background).async { [unowned self] in
-      institutions = self.allInstitutions.filter {
-        $0.name.starts(with: searchTerm)
-      }
-      
-      DispatchQueue.main.async {
-        self.institutions = institutions
-      }
+    self.institutions = self.allInstitutions.filter {
+      $0.name.starts(with: searchTerm)
     }
   }
   

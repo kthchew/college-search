@@ -26,6 +26,8 @@ struct SearchBarView: UIViewRepresentable {
       parent.searchText = searchText
       if searchText.count == 0 {
         parent.onClear?()
+      } else {
+        parent.onSearch?(searchText)
       }
     }
     
