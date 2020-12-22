@@ -13,7 +13,7 @@ class ViewModelTests: XCTestCase {
   var viewModel: ViewModel!
   
   override func setUpWithError() throws {
-    viewModel = ViewModel(institutions: exampleInstitutions)
+    viewModel = ViewModel(allInstitutions: exampleInstitutions)
   }
   
   override func tearDownWithError() throws {
@@ -29,8 +29,8 @@ class ViewModelTests: XCTestCase {
   }
   
   func testReset() throws {
-    viewModel.institutions = [Institution.example1]
-    viewModel.reset()
-    XCTAssertEqual(exampleInstitutions, viewModel.institutions)
+    let filteredViewModel = ViewModel(allInstitutions: exampleInstitutions, institutions: [Institution.example1])
+    filteredViewModel.reset()
+    XCTAssertEqual(exampleInstitutions, filteredViewModel.institutions)
   }
 }

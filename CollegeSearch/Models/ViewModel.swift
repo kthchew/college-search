@@ -35,10 +35,18 @@ class ViewModel: ObservableObject {
   }
   
   #if DEBUG
-  /// Creates a view model with the given `institutions`.
+  /// Creates a view model with the given list of `institutions`.
   /// - Parameter institutions: An array of institutions for the view model to use.
-  init(institutions: [Institution]) {
-    self.allInstitutions = institutions
+  init(allInstitutions: [Institution]) {
+    self.allInstitutions = allInstitutions
+    self.institutions = allInstitutions
+  }
+  
+  /// Creates a view model with the given list of `allInstitutions`, and already filtered and sorted `institutions`.
+  /// - Parameter institutions: A full array of institutions for the view model to use.
+  /// - Parameter allInstitutions: An array of filtered and sorted institutions.
+  init(allInstitutions: [Institution], institutions: [Institution]) {
+    self.allInstitutions = allInstitutions
     self.institutions = institutions
   }
   #endif
