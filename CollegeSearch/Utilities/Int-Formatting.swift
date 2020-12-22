@@ -11,6 +11,8 @@ extension Int {
   /// A formatted textual representation of the number.
   var normalFormat: String? {
     let formatter = NumberFormatter()
+    formatter.numberStyle = .decimal
+    formatter.maximumFractionDigits = 0
     return formatter.string(from: self as NSNumber)
   }
   
@@ -18,6 +20,7 @@ extension Int {
   var currencyFormat: String? {
     let formatter = NumberFormatter()
     formatter.numberStyle = .currency
+    formatter.maximumFractionDigits = 0
     return formatter.string(from: self as NSNumber)
   }
   
