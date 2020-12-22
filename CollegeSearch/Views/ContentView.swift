@@ -13,7 +13,7 @@ struct ContentView: View {
   var body: some View {
     NavigationView {
       List(viewModel.institutions) { institution in
-        NavigationLink(destination: DetailView(institution: institution)) {
+        NavigationLink(destination: InstitutionView(institution: institution)) {
           Text(institution.name)
         }
       }
