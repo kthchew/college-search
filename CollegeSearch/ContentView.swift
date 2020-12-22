@@ -8,13 +8,16 @@
 import SwiftUI
 
 struct ContentView: View {
-  @StateObject var viewModel = ViewModel()
+  @EnvironmentObject var viewModel: ViewModel
   
   var body: some View {
     NavigationView {
       List(viewModel.institutions) { institution in
-        Text(institution.name)
+        NavigationLink(destination: DetailView(institution: institution)) {
+          Text(institution.name)
+        }
       }
+      .navigationBarTitle("All Schools")
     }
   }
 }

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9F38E7AA25919B6E007A3C35 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F38E7A925919B6E007A3C35 /* DetailView.swift */; };
+		9F38E7AF2591A640007A3C35 /* Int-Formatting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F38E7AE2591A640007A3C35 /* Int-Formatting.swift */; };
 		9FEFFF8F259179D300382D62 /* CollegeSearchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FEFFF8E259179D300382D62 /* CollegeSearchApp.swift */; };
 		9FEFFF91259179D300382D62 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FEFFF90259179D300382D62 /* ContentView.swift */; };
 		9FEFFF93259179D600382D62 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FEFFF92259179D600382D62 /* Assets.xcassets */; };
@@ -37,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9F38E7A925919B6E007A3C35 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		9F38E7AE2591A640007A3C35 /* Int-Formatting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int-Formatting.swift"; sourceTree = "<group>"; };
 		9FEFFF8B259179D300382D62 /* CollegeSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CollegeSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FEFFF8E259179D300382D62 /* CollegeSearchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollegeSearchApp.swift; sourceTree = "<group>"; };
 		9FEFFF90259179D300382D62 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -105,8 +109,10 @@
 			children = (
 				9FEFFF8E259179D300382D62 /* CollegeSearchApp.swift */,
 				9FEFFF90259179D300382D62 /* ContentView.swift */,
+				9F38E7A925919B6E007A3C35 /* DetailView.swift */,
 				9FEFFFC725917A7800382D62 /* Institution.swift */,
 				9FEFFFCC25917A8100382D62 /* ViewModel.swift */,
+				9F38E7AE2591A640007A3C35 /* Int-Formatting.swift */,
 				9FEFFF92259179D600382D62 /* Assets.xcassets */,
 				9FEFFF97259179D600382D62 /* Info.plist */,
 				9FEFFFBC259179EE00382D62 /* colleges.csv */,
@@ -280,6 +286,8 @@
 				9FEFFF91259179D300382D62 /* ContentView.swift in Sources */,
 				9FEFFFC825917A7800382D62 /* Institution.swift in Sources */,
 				9FEFFFCD25917A8100382D62 /* ViewModel.swift in Sources */,
+				9F38E7AA25919B6E007A3C35 /* DetailView.swift in Sources */,
+				9F38E7AF2591A640007A3C35 /* Int-Formatting.swift in Sources */,
 				9FEFFF8F259179D300382D62 /* CollegeSearchApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

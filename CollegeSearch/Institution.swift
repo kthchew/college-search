@@ -133,4 +133,40 @@ struct Institution: Decodable, Hashable, Identifiable {
     case actMath25Percentile = "ADM2019.ACT Math 25th percentile score"
     case actMath75Percentile = "ADM2019.ACT Math 75th percentile score"
   }
+  
+  // MARK: - Debugging
+  
+  #if DEBUG
+  private init(id: Int, name: String, percentAdmittedTotal: Int?, percentAdmittedMen: Int?, percentAdmittedWomen: Int?, admissionsYieldTotal: Int?, admissionsYieldMen: Int?, admissionsYieldWomen: Int?, tuitionAndFees: Int?, headcount: Int?, percentUndergradsAwardedAid: Int?, netPriceForStudentsAwardedAid: Int?, totalApplicants: Int?, totalAdmissions: Int?, totalEnrolled: Int?, percentStudentsSubmittingSATScores: Int?, percentStudentsSubmittingACTScores: Int?, satEnglish25Percentile: Int?, satEnglish75Percentile: Int?, satMath25Percentile: Int?, satMath75Percentile: Int?, actComposite25Percentile: Int?, actComposite75Percentile: Int?, actEnglish25Percentile: Int?, actEnglish75Percentile: Int?, actMath25Percentile: Int?, actMath75Percentile: Int?) {
+    self.id = id
+    self.name = name
+    self.percentAdmittedTotal = percentAdmittedTotal
+    self.percentAdmittedMen = percentAdmittedMen
+    self.percentAdmittedWomen = percentAdmittedWomen
+    self.admissionsYieldTotal = admissionsYieldTotal
+    self.admissionsYieldMen = admissionsYieldMen
+    self.admissionsYieldWomen = admissionsYieldWomen
+    self.tuitionAndFees = tuitionAndFees
+    self.headcount = headcount
+    self.percentUndergradsAwardedAid = percentUndergradsAwardedAid
+    self.netPriceForStudentsAwardedAid = netPriceForStudentsAwardedAid
+    self.totalApplicants = totalApplicants
+    self.totalAdmissions = totalAdmissions
+    self.totalEnrolled = totalEnrolled
+    self.percentStudentsSubmittingSATScores = percentStudentsSubmittingSATScores
+    self.percentStudentsSubmittingACTScores = percentStudentsSubmittingACTScores
+    self.satEnglish25Percentile = satEnglish25Percentile
+    self.satEnglish75Percentile = satEnglish75Percentile
+    self.satMath25Percentile = satMath25Percentile
+    self.satMath75Percentile = satMath75Percentile
+    self.actComposite25Percentile = actComposite25Percentile
+    self.actComposite75Percentile = actComposite75Percentile
+    self.actEnglish25Percentile = actEnglish25Percentile
+    self.actEnglish75Percentile = actEnglish75Percentile
+    self.actMath25Percentile = actMath25Percentile
+    self.actMath75Percentile = actMath75Percentile
+  }
+  
+  static let example = Institution(id: 1, name: "School", percentAdmittedTotal: 0, percentAdmittedMen: 0, percentAdmittedWomen: 0, admissionsYieldTotal: 0, admissionsYieldMen: 0, admissionsYieldWomen: 0, tuitionAndFees: 0, headcount: 0, percentUndergradsAwardedAid: 0, netPriceForStudentsAwardedAid: 0, totalApplicants: 0, totalAdmissions: 0, totalEnrolled: 0, percentStudentsSubmittingSATScores: 0, percentStudentsSubmittingACTScores: 0, satEnglish25Percentile: 0, satEnglish75Percentile: 0, satMath25Percentile: 0, satMath75Percentile: 0, actComposite25Percentile: 0, actComposite75Percentile: 0, actEnglish25Percentile: 0, actEnglish75Percentile: 0, actMath25Percentile: 0, actMath75Percentile: 0)
+  #endif
 }
