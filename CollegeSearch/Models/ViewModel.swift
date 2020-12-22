@@ -9,10 +9,13 @@ import Foundation
 import CodableCSV
 
 class ViewModel: ObservableObject {
+  /// An array of stored institutions.
   @Published var institutions: [Institution]
   
+  /// Creates a view model, loading a list of institutions from `colleges.csv` in the app bundle.
   init() {
     let decoder = CSVDecoder()
+    // reduce memory usage of decoder
     decoder.bufferingStrategy = .sequential
     decoder.presample = false
     decoder.headerStrategy = .firstLine
@@ -22,10 +25,8 @@ class ViewModel: ObservableObject {
         institutions = decoded
         return
       }
-      
       fatalError("Failed to decode the data.")
     }
-    
     fatalError("Failed to load the college file.")
   }
 }

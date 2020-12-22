@@ -7,11 +7,12 @@
 
 import Foundation
 
+/// An extension adding easy access to formatted forms of an `Int`.
 extension Int {
   /// A formatted textual representation of the number.
   var normalFormat: String? {
     let formatter = NumberFormatter()
-    formatter.numberStyle = .decimal
+    formatter.numberStyle = .decimal // needed for commas in the number
     formatter.maximumFractionDigits = 0
     return formatter.string(from: self as NSNumber)
   }

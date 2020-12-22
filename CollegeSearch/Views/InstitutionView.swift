@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+/// A detail view that shows information about one `institution`.
 struct InstitutionView: View {
   let institution: Institution
   
@@ -80,6 +81,7 @@ struct InstitutionView: View {
   }
 }
 
+/// A view with text on the far left and far right sides, used as a row in a list.
 struct CellView: View {
   /// The text to show on the left of the cell.
   let titleText: String

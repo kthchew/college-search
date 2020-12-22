@@ -7,6 +7,7 @@
 
 import Foundation
 
+/// A struct representing an institution, containing some of its basic statistics.
 struct Institution: Decodable, Hashable, Identifiable {
   /// The unit ID of the institution.
   let id: Int
