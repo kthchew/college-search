@@ -13,7 +13,7 @@
 		9FEFFF91259179D300382D62 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FEFFF90259179D300382D62 /* ContentView.swift */; };
 		9FEFFF93259179D600382D62 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FEFFF92259179D600382D62 /* Assets.xcassets */; };
 		9FEFFF96259179D600382D62 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FEFFF95259179D600382D62 /* Preview Assets.xcassets */; };
-		9FEFFFA1259179D700382D62 /* CollegeSearchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FEFFFA0259179D700382D62 /* CollegeSearchTests.swift */; };
+		9FEFFFA1259179D700382D62 /* IntFormattingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FEFFFA0259179D700382D62 /* IntFormattingTests.swift */; };
 		9FEFFFAC259179D700382D62 /* CollegeSearchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FEFFFAB259179D700382D62 /* CollegeSearchUITests.swift */; };
 		9FEFFFBD259179EE00382D62 /* colleges.csv in Resources */ = {isa = PBXBuildFile; fileRef = 9FEFFFBC259179EE00382D62 /* colleges.csv */; };
 		9FEFFFC325917A6400382D62 /* CodableCSV in Frameworks */ = {isa = PBXBuildFile; productRef = 9FEFFFC225917A6400382D62 /* CodableCSV */; };
@@ -48,7 +48,7 @@
 		9FEFFF95259179D600382D62 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		9FEFFF97259179D600382D62 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9FEFFF9C259179D700382D62 /* CollegeSearchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CollegeSearchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		9FEFFFA0259179D700382D62 /* CollegeSearchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollegeSearchTests.swift; sourceTree = "<group>"; };
+		9FEFFFA0259179D700382D62 /* IntFormattingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntFormattingTests.swift; sourceTree = "<group>"; };
 		9FEFFFA2259179D700382D62 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9FEFFFA7259179D700382D62 /* CollegeSearchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CollegeSearchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FEFFFAB259179D700382D62 /* CollegeSearchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollegeSearchUITests.swift; sourceTree = "<group>"; };
@@ -164,7 +164,7 @@
 		9FEFFF9F259179D700382D62 /* CollegeSearchTests */ = {
 			isa = PBXGroup;
 			children = (
-				9FEFFFA0259179D700382D62 /* CollegeSearchTests.swift */,
+				9FEFFFA0259179D700382D62 /* IntFormattingTests.swift */,
 				9FEFFFA2259179D700382D62 /* Info.plist */,
 			);
 			path = CollegeSearchTests;
@@ -328,7 +328,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9FEFFFA1259179D700382D62 /* CollegeSearchTests.swift in Sources */,
+				9FEFFFA1259179D700382D62 /* IntFormattingTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
