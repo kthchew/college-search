@@ -1,5 +1,5 @@
 //
-//  CollegeSearchTests.swift
+//  IntFormattingTests.swift
 //  CollegeSearchTests
 //
 //  Created by Kenneth Chew on 12/21/20.
@@ -8,7 +8,7 @@
 import XCTest
 @testable import CollegeSearch
 
-class CollegeSearchTests: XCTestCase {
+class IntFormattingTests: XCTestCase {
   func testNormalIntFormatting() throws {
     XCTAssertEqual("4,329", 4329.normalFormat)
     XCTAssertEqual("23", 23.normalFormat)
