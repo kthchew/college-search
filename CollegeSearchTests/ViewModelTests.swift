@@ -24,7 +24,7 @@ class ViewModelTests: XCTestCase {
     viewModel.filter(by: "sch")
     XCTAssertEqual([Institution.example1], viewModel.institutions)
     
-    viewModel.filter(by: "inst")
+    viewModel.filter(by: "Inst")
     XCTAssertEqual([Institution.example2], viewModel.institutions)
   }
   
