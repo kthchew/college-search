@@ -100,6 +100,6 @@ struct CellView: View {
 
 struct InstitutionView_Previews: PreviewProvider {
   static var previews: some View {
-    InstitutionView(institution: Institution.example)
+    InstitutionView(institution: Institution.example1)
   }
 }

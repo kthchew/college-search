@@ -34,11 +34,20 @@ class ViewModel: ObservableObject {
     fatalError("Failed to load the college file.")
   }
   
+  #if DEBUG
+  /// Creates a view model with the given `institutions`.
+  /// - Parameter institutions: An array of institutions for the view model to use.
+  init(institutions: [Institution]) {
+    self.allInstitutions = institutions
+    self.institutions = institutions
+  }
+  #endif
+  
   /// Filter the institutions by those that start with `searchTerm`.
   /// - Parameter searchTerm: A string to filter the institutions by.
   func filter(by searchTerm: String) {
     self.institutions = self.allInstitutions.filter {
-      $0.name.starts(with: searchTerm)
+      $0.name.lowercased().starts(with: searchTerm.lowercased())
     }
   }
   
