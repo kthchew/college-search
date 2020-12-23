@@ -10,22 +10,33 @@ import SwiftUI
 struct ContentView: View {
   @EnvironmentObject var viewModel: ViewModel
   @State private var text = ""
+  @State private var detailPushActive = false
+  @State private var selectedRow: Int?
   
   var body: some View {
     NavigationView {
       VStack {
-        SearchBarView(searchText: $text, onSearch: viewModel.filter, onClear: viewModel.reset)
-        List {
-          ForEach(viewModel.institutions) { institution in
-            NavigationLink(destination: InstitutionView(institution: institution)) {
-              Text(institution.name)
+        InstitutionTableView($viewModel.institutions, selectedRow: $selectedRow, onSearch: viewModel.filter, onClear: viewModel.reset)
+          .onChange(of: selectedRow) { value in
+            if selectedRow != nil {
+              detailPushActive = true
             }
           }
+        
+        // invisible view to push the detail view
+        if selectedRow != nil {
+          NavigationLink(
+            destination:
+              InstitutionView(institution: viewModel.institutions[selectedRow!])
+              .onDisappear(perform: {
+                selectedRow = nil
+              }),
+            isActive: $detailPushActive) {
+            EmptyView()
+          }
+          .hidden()
         }
-        .id(UUID()) // prevent lag when searching
-        .listStyle(PlainListStyle())
       }
-      
       .navigationBarTitle("All Schools")
     }
   }

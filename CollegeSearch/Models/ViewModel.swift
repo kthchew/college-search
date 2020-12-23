@@ -13,7 +13,7 @@ class ViewModel: ObservableObject {
   let allInstitutions: [Institution]
   
   /// An array of institutions to show, after any sorting and filters are applied.
-  @Published private(set) var institutions: [Institution]
+  @Published var institutions: [Institution]
   
   /// Creates a view model, loading a list of institutions from `colleges.csv` in the app bundle.
   init() {
