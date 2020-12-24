@@ -19,6 +19,7 @@ struct InstitutionTableView: UIViewControllerRepresentable {
   
   class Coordinator: NSObject, UITableViewDataSource, UITableViewDelegate, UISearchBarDelegate {
     let parent: InstitutionTableView
+    let searchBar = UISearchBar()
     
     init(_ parent: InstitutionTableView) {
       self.parent = parent
@@ -37,6 +38,17 @@ struct InstitutionTableView: UIViewControllerRepresentable {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
       parent.selectedRow = indexPath.row
+    }
+    
+    func tableView(_ tableView: UITableView, contextMenuConfigurationForRowAt indexPath: IndexPath, point: CGPoint) -> UIContextMenuConfiguration? {
+      return UIContextMenuConfiguration(identifier: nil, previewProvider: {
+        let institution = self.parent.data[indexPath.row]
+        let institutionView = NavigationView { InstitutionView(institution: institution) }
+        let controller = UIHostingController(rootView: institutionView)
+        controller.title = institution.name
+        
+        return controller
+      }, actionProvider: nil)
     }
     
     // Search Bar delegate methods
