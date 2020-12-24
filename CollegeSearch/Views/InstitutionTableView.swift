@@ -51,6 +51,13 @@ struct InstitutionTableView: UIViewControllerRepresentable {
       }, actionProvider: nil)
     }
     
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+      searchBar.delegate = self
+      searchBar.sizeToFit()
+      searchBar.placeholder = "Search Schools"
+      return searchBar // search bar as a section header keeps the search bar visible when scrolling down in the long list
+    }
+    
     // Search Bar delegate methods
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
       if searchText.count == 0 {
@@ -94,13 +101,6 @@ struct InstitutionTableView: UIViewControllerRepresentable {
     tableController.tableView.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
     tableController.tableView.delegate = context.coordinator
     tableController.tableView.dataSource = context.coordinator
-    
-    let searchBar = UISearchBar()
-    searchBar.delegate = context.coordinator
-    searchBar.placeholder = "Search Schools"
-    searchBar.showsCancelButton = false
-    searchBar.sizeToFit()
-    tableController.tableView.tableHeaderView = searchBar
     
     return tableController
   }
