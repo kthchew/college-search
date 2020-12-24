@@ -72,6 +72,10 @@ struct InstitutionTableView: UIViewControllerRepresentable {
       searchBar.setShowsCancelButton(true, animated: true)
     }
     
+    func searchBarTextDidEndEditing(_ searchBar: UISearchBar) {
+      searchBar.setShowsCancelButton(false, animated: true) // needed so that cancel button disappears when keyboard is dismissed by dragging on the table view
+    }
+    
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
       searchBar.endEditing(false)
       searchBar.setShowsCancelButton(false, animated: true)
@@ -101,6 +105,7 @@ struct InstitutionTableView: UIViewControllerRepresentable {
     tableController.tableView.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
     tableController.tableView.delegate = context.coordinator
     tableController.tableView.dataSource = context.coordinator
+    tableController.tableView.keyboardDismissMode = .onDrag
     
     return tableController
   }
