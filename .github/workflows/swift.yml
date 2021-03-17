@@ -1,0 +1,18 @@
+name: Swift
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+
+    runs-on: macos-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: iOS build and tests
+      run: xcodebuild test -scheme "CollegeSearch" -destination platform\=iOS\ Simulator,name\=iPhone\ 8
+

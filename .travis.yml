@@ -1,7 +1,0 @@
-os: osx
-language: swift
-osx_image: xcode12.2
-xcode_project: CollegeSearch.xcodeproj
-xcode_scheme: CollegeSearch
-xcode_destination: platform=iOS Simulator,OS=14.2,name=iPhone 8
-
